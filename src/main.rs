@@ -1,3 +1,10 @@
+use clap::Parser;
+use cli_arguments::TracepixCliArguments;
+
+mod cli_arguments;
+
 fn main() {
-    println!("Hello, world!");
+    let args = TracepixCliArguments::parse();
+
+    println!("{:#?}", args);
 }
