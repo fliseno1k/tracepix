@@ -11,4 +11,10 @@ pub struct TracepixCliArguments {
 
     #[arg(short, long)]
     pub otput_path: Option<PathBuf>,
+
+    #[arg(short, long)]
+    pub threshold: f32,
+
+    #[arg(short, long)]
+    pub antialiasing: bool,
 }
